@@ -1,0 +1,6 @@
+-XX:+UnlockDiagnosticVMOptions
+-XX:+LogCompilation
+
+
+-XX:+PrintCodeCache
+-XX:ReservedCodeCacheSize=40m
