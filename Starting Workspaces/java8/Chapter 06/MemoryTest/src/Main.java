@@ -8,18 +8,24 @@ public class Main {
 	
 	public void start() {
 		String last = "Z";
+		int newVal = 20;
 		Container container = new Container();
 		container.setInitial("C");
-		another(container,last);
-		System.out.print(container.getInitial());
+		container.setMyInt(newVal);
+		System.out.println(container);
+		another(container,last, newVal);
 	}
 	
-	public void another(Container initialHolder, String newInitial) {
+	public void another(Container initialHolder, String newInitial, int newVal) {
 		newInitial.toLowerCase();
 		initialHolder.setInitial("B");
+		initialHolder.setMyInt(newVal + 10);
+		System.out.println(initialHolder);
 		Container initial2 = new Container();
 		initialHolder=initial2;
-		System.out.print(initialHolder.getInitial());
-		System.out.print(newInitial);
+		System.out.println(initial2);
+
+//		System.out.println(initialHolder.getInitial());
+//		System.out.println(newInitial);
 	}
 }
