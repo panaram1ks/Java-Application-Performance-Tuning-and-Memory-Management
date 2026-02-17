@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -14,11 +15,17 @@ public class CustomerRecords implements Iterable<Customer> {
 	}
 		
 	public Map<String, Customer> getCustomers() {
-		return new HashMap<String, Customer>(this.records);
+//		return new HashMap<String, Customer>(this.records);
+//		return Map.copyOf(records); // java 10+ version
+		return Collections.unmodifiableMap(this.records);
 	}
 
 	@Override
 	public Iterator<Customer> iterator() {
 		return records.values().iterator();
+	}
+
+	public Customer find(String name){
+	 return new Customer(records.get(name));
 	}
 }
