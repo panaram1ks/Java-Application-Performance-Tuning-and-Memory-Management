@@ -8,22 +8,22 @@ public class Main {
         records.addCustomer(new Customer("John"));
         records.addCustomer(new Customer("Simon"));
 
-//		records.getCustomers().clear();
-//        for (Customer next : records.getCustomers().values()) {
-//            System.out.println(next);
-//        }
-
-		for (Customer record : records) {
-			System.out.println(record);
-		}
-
-        Iterator<Customer> it = records.iterator();
-        it.next();
-        it.remove();
-
-        for (Customer record : records) {
-            System.out.println(record);
+		records.getCustomers().clear();
+        for (Customer next : records.getCustomers().values()) {
+            System.out.println(next);
         }
+
+//		for (Customer record : records) {
+//			System.out.println(record);
+//		}
+
+//        Iterator<Customer> it = records.iterator();
+//        it.next();
+//        it.remove();
+//
+//        for (Customer record : records) {
+//            System.out.println(record);
+//        }
 
 
     }
