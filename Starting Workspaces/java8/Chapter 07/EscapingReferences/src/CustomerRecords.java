@@ -25,7 +25,7 @@ public class CustomerRecords implements Iterable<Customer> {
 		return records.values().iterator();
 	}
 
-	public Customer find(String name){
+	public ReadonlyCustomer find(String name){
 	 return new Customer(records.get(name));
 	}
 }

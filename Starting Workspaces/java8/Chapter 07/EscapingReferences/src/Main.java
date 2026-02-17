@@ -10,9 +10,10 @@ public class Main {
 
 //		records.getCustomers().clear();
 
-        Customer john = records.find("John");
-        john.setName("Jane");
-        System.out.println(john);
+        ReadonlyCustomer john = records.find("John");
+        Customer customer = (Customer) john;
+        customer.setName("Jane");
+        System.out.println(customer);
 
         for (Customer next : records.getCustomers().values()) {
             System.out.println(next);

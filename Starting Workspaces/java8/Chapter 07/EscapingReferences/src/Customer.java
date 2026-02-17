@@ -1,7 +1,8 @@
 
-public class Customer {
+public class Customer implements ReadonlyCustomer {
     private String name;
 
+    @Override
     public String getName() {
         return name;
     }
@@ -18,6 +19,7 @@ public class Customer {
 		this.name = exist.getName();
     }
 
+    @Override
     public String toString() {
         return name;
     }
