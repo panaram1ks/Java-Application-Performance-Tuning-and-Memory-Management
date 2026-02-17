@@ -3,4 +3,12 @@
 
 
 -XX:+PrintCodeCache
--XX:ReservedCodeCacheSize=40m
+-XX:ReservedCodeCacheSize=40m   // изменение размера кэша для вызова методов из кэша без компиляции
+
+-client
+-XX:-TieredCompilation
+
+jps
+jinfo -flag CICompilerCount 14732
+-XX:CICompilerCount=n           // количество потоков занимающихся компиляцией
+-XX:CompileThreshold=n
