@@ -1,4 +1,10 @@
 
--XX:+PrintStringTableStatistics
+-XX:+PrintStringTableStatistics -> показывает PoolString utilization
 
--XX:StringTableSize=80532224
+-XX:StringTableSize=80532224 -> размер StringPool
+
+-XX:MaxHeapSize=48m          -> изменить размер Heap
+
+-XX:InitialHeapSize=100m     -> размер Heap с которым приложение стартует
+
+
