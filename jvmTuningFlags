@@ -1,0 +1,4 @@
+
+-XX:+PrintStringTableStatistics
+
+-XX:StringTableSize=80532224
