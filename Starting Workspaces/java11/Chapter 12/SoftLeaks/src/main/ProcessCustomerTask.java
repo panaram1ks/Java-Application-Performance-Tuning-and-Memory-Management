@@ -20,7 +20,7 @@ private CustomerManager cm;
 			if (customer.isEmpty()) {
 				//no customers in queue so pause for half a second
 				try {
-					Thread.sleep((50));
+					Thread.sleep((200));
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

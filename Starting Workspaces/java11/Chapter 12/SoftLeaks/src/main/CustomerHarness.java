@@ -6,7 +6,7 @@ public class CustomerHarness {
 		GenerateCustomerTask generateTask = new GenerateCustomerTask(cm);
 		ProcessCustomerTask processTask = new ProcessCustomerTask(cm);
 		
-		for (int user = 0; user < 10; user++) {
+		for (int user = 0; user < 20; user++) {
 			Thread t = new Thread(generateTask);
 			t.start();
 		}
