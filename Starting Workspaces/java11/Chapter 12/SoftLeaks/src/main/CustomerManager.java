@@ -23,12 +23,12 @@ public class CustomerManager {
     }
 
     public Optional<Customer> getNextCustomer() {
-//        synchronized (customers) {
+        synchronized (customers) {
             if (customers.size() > 0) {
-//                return Optional.of(customers.remove(0));
-                return Optional.of(customers.get(0));
+                return Optional.of(customers.remove(0));
+//                return Optional.of(customers.get(0));
             }
-//        }
+        }
         return Optional.empty();
 
     }
