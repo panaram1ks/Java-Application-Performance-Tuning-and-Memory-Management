@@ -9,7 +9,10 @@
 
 
 VisualVM
+plugin VisualGC             -> отображает как объекты перемещаются между поколениями Eden,S0,S1,Old
+
 Eclipse Memory Analyzer      ->  able analyze Heap or dumpHeap
+source ~/.bashrc
 
 -XX:+HeapDumpOnOutOfMemoryError
 -XX:HeadDumpPath=<someFilePath>
