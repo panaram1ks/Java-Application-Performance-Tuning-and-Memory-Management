@@ -8,3 +8,8 @@
 -XX:InitialHeapSize=100m     -> размер Heap с которым приложение стартует
 
 
+VisualVM
+Eclipse Memory Analyzer      ->  able analyze Heap or dumpHeap
+
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeadDumpPath=<someFilePath>
