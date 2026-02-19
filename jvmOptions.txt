@@ -12,3 +12,7 @@ jps
 jinfo -flag CICompilerCount 14732
 -XX:CICompilerCount=n           // количество потоков занимающихся компиляцией
 -XX:CompileThreshold=n
+
+
+Chapter 12 OutOfMemoryError, dramatically slow performance
+-Xms30m -Xmx40m
