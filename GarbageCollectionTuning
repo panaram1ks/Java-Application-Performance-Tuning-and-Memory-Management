@@ -13,3 +13,10 @@ GC: Serial, Parallel, MostlyConcurrent
 -XX:+UseSerialGC
 -XX:+UseParallelGC
 -XX:+UseConcMarkSweepGC or -XX:+UseG1GC
+
+
+-XX:ConcGCThreads=n             -> Задаёт количество параллельных потоков, которые JVM использует для конкурентных (concurrent) фаз сборки мусора
+
+-XX:InitiatingHeapOccupancyPercent=n -> Процент заполнения всего heap (old + humongous в G1), при достижении которого стартует concurrent cycle (в G1) или concurrent marking (в CMS)
+
+-XX:UseStringDeDuplication (only available if using G1)
