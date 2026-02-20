@@ -7,3 +7,9 @@
 -XX:SurvivorRatio=n             -> Задаёт соотношение Eden : Survivor внутри Young Generation (один Survivor)
 
 -XX:MaxTenuringThreshold=n      -> Определяет максимально возможный возраст (tenuring threshold), до которого объект может оставаться в Survivor-пространствах Young Generation, прежде чем будет принудительно повышен (promoted / tenured) в Old Generation.
+
+
+GC: Serial, Parallel, MostlyConcurrent
+-XX:+UseSerialGC
+-XX:+UseParallelGC
+-XX:+UseConcMarkSweepGC or -XX:+UseG1GC
