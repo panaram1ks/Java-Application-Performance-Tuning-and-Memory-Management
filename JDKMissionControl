@@ -1,0 +1,12 @@
+https://github.com/JDKMissionControl/jmc
+
+git clone https://github.com/JDKMissionControl/jmc.git
+cd third-party/
+mvn p2:site
+mvn -U p2:site
+
+mvn install:install-file -Dfile= -DgroupId=javax.mail -DartifactId=dsn -Dpackaging=jar -Dversion=1.4
+
+
+https://jdk.java.net/jmc/8/
+
