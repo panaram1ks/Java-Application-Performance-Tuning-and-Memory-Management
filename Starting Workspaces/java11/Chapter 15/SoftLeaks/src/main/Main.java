@@ -10,8 +10,8 @@ public class Main {
         while (true){
             Customer c = new Customer("SomeName");
             customers.add(c);
-            if(customers.size() > 100){
-                for (int i = 0; i < 10; i++){
+            if(customers.size() > 100_000){
+                for (int i = 0; i < 90_000; i++){
                     customers.remove(0);
                 }
             }
