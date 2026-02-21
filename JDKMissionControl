@@ -10,3 +10,8 @@ mvn install:install-file -Dfile= -DgroupId=javax.mail -DartifactId=dsn -Dpackagi
 
 https://jdk.java.net/jmc/8/
 
+
+-XX:+UnlockCommercialFeature
+-XX:+FlightRecorder
+
+
